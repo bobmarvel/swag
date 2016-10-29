@@ -1,0 +1,28 @@
+.docProjectHeaderTable
+{
+	background-color: white;
+	width: 100%;
+	border: 5px solid green;
+	padding: 0px;
+	-moz-border-image: url(puten.jpg) 10 round round;
+	-webkit-border-image: url(puten.jpg) 10 round round;
+	-o-border-image: url(puten.jpg) 10 round round;
+	border-image: url(puten.jpg) 10 round round;
+}
+
+.logoSamanMati
+{
+	float:left;
+
+}
+
+.projectName
+{
+	width: 100%;
+	text-align: center;
+}
+
+.docProjectBooks
+{
+	float: right;
+}
