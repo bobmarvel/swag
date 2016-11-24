@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="mycss.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</head>
+<body>
+<h2> JQUERY EFFECTS </h2>
+<div id="kv1"> 1 </div>
+<div id="kv2"> 2 </div>
+<div id="kv3"> 3 </div>
+ <button onclick="addEffect1()"> Effect Show() </button>
+ <button onclick="addEffect2()"> Effect SlideDown() </button>
+ <button onclick="addEffect3()"> Effect Animate() </button>
+ <script>
+ function addEffect1(){
+   $("#kv1").show();
+ }
+ function addEffect2(){
+   $("#kv2").slideDown("slow");
+ }
+ function addEffect3(){
+   $("#kv3").show().animate();
+ }
+ </script>
+</body>
+</html>
