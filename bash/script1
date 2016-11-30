@@ -1,0 +1,40 @@
+#!/bin/bash 
+
+if(($# != 4)) 
+then 
+echo “Wrong number of parameters” 
+else 
+srcdir=$1 
+ext=$2 
+destdir=$3 
+logf=$4 
+echo `date "+%Y.%m.%d %H:%M:%S"` "Start" » $logf 
+echo `date "+%Y.%m.%d %H:%M:%S"` "Source directory: $1" » $logf 
+echo `date "+%Y.%m.%d %H:%M:%S"` "File extension: $2" » $logf 
+echo `date "+%Y.%m.%d %H:%M:%S"` "Destination directory: $3" » $logf 
+fn="$destdir/sumfile_"`date "+%Y%m%d%H%M%S"` 
+touch "$fn" 
+find $srcdir -name '*.'$ext | while read nfile 
+do 
+omd5=`cat $nfile.md5` 
+nmd5=`md5sum $nfile | awk '{print $1}'` 
+if [ "$omd5" == "$nmd5" ] 
+then 
+cat $nfile | while read string 
+do 
+summn=0 
+IFS=' ' read -r -a array «< "$string" 
+idn="${array[0]}" 
+for ((i=1; i<"${#array[@]}"; i++)) 
+do 
+expr summn = summn + ${array[$i]} 
+done 
+echo $idn $summn » "$fn" 
+done 
+rm –r $nfile.md5 
+rm -r $nfile 
+else 
+echo `date "+%Y.%m.%d %H:%M:%S"` "$nfile have a wrong md5sum" » $logf 
+fi 
+done 
+fi
