@@ -1,0 +1,96 @@
+ivan-VirtualBox
+CPU Intel(R) Core(TM) i3-6100 CPU
+CPU Freq: 3.70GHz
+Current Freq: Total RAM: 1016216
+Free RAM: 888740
+
+Process #1
+PID: 3012
+CPU: 23.8
+MEM: 29.8
+Prority: 19
+Access Rights: 0
+WHAT: /usr/lib/firefox/firefox
+____________________
+Process #2
+PID: 1668
+CPU: 5.0
+MEM: 8.7
+Prority: 19
+Access Rights: 0
+WHAT: compiz
+____________________
+Process #3
+PID: 3074
+CPU: 2.3
+MEM: 11.4
+Prority: 19
+Access Rights: 0
+WHAT: /usr/lib/firefox/plugin-container
+____________________
+Process #4
+PID: 957
+CPU: 2.0
+MEM: 6.0
+Prority: 19
+Access Rights: 0
+WHAT: /usr/lib/xorg/Xorg
+____________________
+Process #5
+PID: 1972
+CPU: 0.3
+MEM: 2.2
+Prority: 19
+Access Rights: 0
+WHAT: geany
+____________________
+Process #6
+PID: 1993
+CPU: 0.2
+MEM: 2.2
+Prority: 19
+Access Rights: 0
+WHAT: /usr/lib/gnome-terminal/gnome-terminal-server
+____________________
+Process #7
+PID: 1848
+CPU: 0.0
+MEM: 4.2
+Prority: 19
+Access Rights: 0
+WHAT: /usr/lib/evolution/evolution-calendar-factory-subprocess
+____________________
+Process #8
+PID: 1877
+CPU: 0.0
+MEM: 3.0
+Prority: 19
+Access Rights: 0
+WHAT: /usr/lib/x86_64-linux-gnu/fwupd/fwupd
+____________________
+Process #9
+PID: 1788
+CPU: 0.0
+MEM: 3.0
+Prority: 19
+Access Rights: 0
+WHAT: nautilus
+____________________
+Process #10
+PID: 1806
+CPU: 0.0
+MEM: 2.9
+Prority: 19
+Access Rights: 0
+WHAT: /usr/lib/evolution/evolution-calendar-factory-subprocess
+____________________
+Installed 0% 32x packages
+
+RAID:
+Array: /dev/md/ivan-VirtualBox:0
+	Version: x1.2
+	Type: raid0
+	Size: 50.33 MB
+	Devices: 
+	   active sync /dev/sdb
+	   active sync /dev/sdc
